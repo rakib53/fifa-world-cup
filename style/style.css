@@ -405,11 +405,13 @@
 }
 
 @media only screen and (max-width: 500px) {
+     .header {
+          margin: 50px 0 80px;
+     }
      .banner {
           border-radius: 10px;
           flex-direction: column;
           padding: 10px;
-          margin-top: 40px;
      }
 
      .world-cup-info {
