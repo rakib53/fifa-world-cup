@@ -15,10 +15,9 @@
 }
 
 .header {
-     height: 100vh;
      display: flex;
      justify-content: center;
-     align-items: center;
+     margin: 50px 0 80px;
 }
 
 .container {
@@ -29,7 +28,7 @@
 /* Banner section css start here */
 
 .banner {
-     width: 80%;
+     width: 75%;
      padding: 0 40px 0 80px;
      display: flex;
      justify-content: space-between;
@@ -48,10 +47,9 @@
 
 .world-cup-info h1 {
      padding-top: 100px;
-     font-size: 4rem;
+     font-size: 4vw;
      color: var(--white-color);
-     line-height: 5rem;
-     margin-bottom: 30px;
+     margin-bottom: 20px;
      font-family: "Poppins", sans-serif;
 }
 
@@ -68,22 +66,45 @@
 
 .watch-live-btn {
      display: inline-block;
-     padding: 15px 20px;
+     padding: 15px 30px;
      text-decoration: none;
      color: var(--black-color);
      font-weight: 500;
      border-radius: 5px;
      background-color: var(--primary-color);
      font-family: "Poppins", sans-serif;
+     position: relative;
+     animation: changeColor 0.6s ease-in-out infinite;
 }
+
+.live {
+     position: absolute;
+     top: 40%;
+     left: 6%;
+     width: 12px;
+     height: 12px;
+     border-radius: 50px;
+     background-color: red;
+     display: block;
+     animation: color 0.6s ease-in-out infinite;
+}
+
+/* CSS Animation */
+
+@keyframes color {
+     0% {
+          background-color: var(--black-color);
+     }
+     100% {
+          background-color: red;
+     }
+}
+
+/* CSS animation end here */
 
 .watch-live-btn:hover {
      background-color: var(--hover-color);
      transition: 0.3s ease-in-out;
-}
-
-.watch-live-btn span {
-     margin-left: 10px;
 }
 
 .player-image img {
@@ -104,6 +125,7 @@
 
 .importanat-links {
      width: 300px;
+     margin-right: 10px;
 }
 
 .importanat-links-wrapper {
@@ -150,6 +172,7 @@
 .blog .blog-image img {
      width: 100%;
      margin-bottom: 15px;
+     border-radius: 10px 10px 0 0;
 }
 
 .blog-footer {
@@ -192,6 +215,16 @@
 
 .time-and-comment > div > span {
      margin-right: 5px;
+}
+
+.blog-footer .rating span {
+     color: var(--primary-color);
+}
+
+.blog-footer .rating,
+.position {
+     font-family: "Poppins", sans-serif;
+     margin-bottom: 10px;
 }
 
 /* upcomming match css start here */
@@ -328,7 +361,6 @@
      }
 
      .world-cup-info h1 {
-          font-size: 2rem;
           line-height: normal;
      }
 
@@ -372,7 +404,7 @@
      }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 500px) {
      .banner {
           border-radius: 10px;
           flex-direction: column;
@@ -386,6 +418,7 @@
 
      .player-image {
           width: 100%;
+          margin-bottom: -10px;
      }
      .player-image img {
           margin-top: 20px;
