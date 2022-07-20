@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --primary-color: #ffd700;
+     --secondary-color: #161616;
+     --hover-color: #d6b912;
+     --white-color: #fff;
+     --black-color: #000000;
+}
+
+.header {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container {
+     max-width: 1140px;
+     margin: 0 auto;
+}
+
+/* Banner section css start here */
+
+.banner {
+     width: 80%;
+     padding: 0 40px 0 80px;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 30px;
+     background: var(--secondary-color);
+     overflow: hidden;
+}
+
+.world-cup-info {
+     width: 50%;
+}
+
+.player-image {
+     width: 50%;
+}
+
+.world-cup-info h1 {
+     padding-top: 100px;
+     font-size: 4rem;
+     color: var(--white-color);
+     line-height: 5rem;
+     margin-bottom: 30px;
+     font-family: "Poppins", sans-serif;
+}
+
+.world-cup-info p {
+     font-size: 1rem;
+     color: var(--white-color);
+     margin-bottom: 25px;
+     font-family: "Poppins", sans-serif;
+}
+
+.watch-live-btn-wrapper {
+     margin-bottom: 30px;
+}
+
+.watch-live-btn {
+     display: inline-block;
+     padding: 15px 20px;
+     text-decoration: none;
+     color: var(--black-color);
+     font-weight: 500;
+     border-radius: 5px;
+     background-color: var(--primary-color);
+     font-family: "Poppins", sans-serif;
+}
+
+.watch-live-btn:hover {
+     background-color: var(--hover-color);
+     transition: 0.3s ease-in-out;
+}
+
+.watch-live-btn span {
+     margin-left: 10px;
+}
+
+.player-image img {
+     margin-top: 100px;
+     width: 100%;
+     margin-bottom: -5px;
+}
+
+/* Banner section css end here */
+
+/* Article Section CSS Start here */
+
+.articleWrapper {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 80px;
+}
+
+.importanat-links {
+     width: 300px;
+}
+
+.importanat-links-wrapper {
+     background: var(--secondary-color);
+     border-radius: 10px;
+     padding: 20px 30px;
+}
+
+.importanat-links-wrapper > div a {
+     width: 100%;
+     text-decoration: none;
+     color: var(--black-color);
+     display: inline-block;
+     padding: 18px 20px;
+     margin: 10px 0;
+     text-align: center;
+     background-color: var(--white-color);
+     border-radius: 10px;
+     font-weight: 500;
+     font-family: "Poppins", sans-serif;
+}
+
+.importanat-links-wrapper > div a.active {
+     color: var(--black-color);
+     background-color: var(--primary-color);
+}
+
+.importanat-links-wrapper > div a.active:hover {
+     background-color: var(--hover-color);
+     transition: 0.3s ease-in-out;
+}
+
+.blog-wrapper {
+     display: grid;
+     grid-template-columns: repeat(3, 0.5fr);
+     gap: 20px;
+}
+
+.blog {
+     border-radius: 10px;
+     border: 2px solid #ede9e9;
+}
+
+.blog .blog-image img {
+     width: 100%;
+     margin-bottom: 15px;
+}
+
+.blog-footer {
+     padding: 0 15px;
+}
+
+.blog-footer a {
+     text-decoration: none;
+     padding: 0 10px;
+     display: inline-block;
+     border-radius: 5px;
+     color: var(--black-color);
+     margin-bottom: 15px;
+     border: 2px solid var(--black-color);
+     font-family: "Poppins", sans-serif;
+}
+
+.blog-footer a:hover {
+     background-color: #ddd;
+     transition: 0.3s ease-in-out;
+}
+
+.blog-footer .blog-title {
+     font-size: 1.1rem;
+     font-weight: 500;
+     margin-bottom: 15px;
+     font-family: "Poppins", sans-serif;
+}
+
+.time-and-comment {
+     display: flex;
+     padding-bottom: 10px;
+     margin-bottom: 15px;
+}
+
+.time-and-comment > div {
+     margin-right: 20px;
+     font-family: "Poppins", sans-serif;
+}
+
+.time-and-comment > div > span {
+     margin-right: 5px;
+}
+
+/* upcomming match css start here */
+
+.blog-matches {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 15px;
+     gap: 10px;
+     font-family: "Poppins", sans-serif;
+}
+
+.matches-blog {
+     padding: 15px;
+}
+
+.blog-matches > div {
+     font-weight: 600;
+}
+
+.blog-footer .time {
+     font-size: 14px;
+     text-align: center;
+     font-family: "Poppins", sans-serif;
+}
+
+.match {
+     text-align: center;
+     font-size: 18px;
+     margin-bottom: 10px;
+     font-family: "Poppins", sans-serif;
+}
+
+.view-all-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 80px;
+}
+
+.view-all-button a {
+     text-align: center;
+     text-decoration: none;
+     font-family: "Poppins", sans-serif;
+     background-color: var(--primary-color);
+     border-radius: 5px;
+     padding: 15px 40px;
+     font-weight: 600;
+     color: var(--black-color);
+}
+
+/* upcomming match css end here */
+
+/* Article Section CSS End here */
+
+/* Footer css start here */
+
+.footer {
+     padding: 100px 0;
+     background-color: var(--secondary-color);
+}
+
+.footer .brand-name h2 {
+     text-align: center;
+     color: var(--white-color);
+     padding: 40px 0;
+     font-size: 2.5rem;
+     font-family: "Poppins", sans-serif;
+}
+
+.footer hr {
+     border: 0.5px solid #333232;
+}
+
+.footer-navigation ul {
+     display: flex;
+     justify-content: center;
+     margin: 40px 0 20px;
+}
+
+.footer-navigation ul li {
+     list-style: none;
+     margin: 0 10px;
+}
+
+.footer-navigation ul li a {
+     text-decoration: none;
+     color: #b7adad;
+     font-size: 1rem;
+     text-transform: capitalize;
+     font-family: "Poppins", sans-serif;
+}
+
+.social-media {
+     justify-content: center;
+     display: flex;
+}
+
+.social-media a {
+     margin: 10px;
+     text-decoration: none;
+}
+
+.social-media a i {
+     font-size: 25px;
+     color: var(--primary-color);
+}
+
+/* Footer css end here */
+
+/* Responsive css Start here */
+
+@media only screen and (max-width: 991px) {
+     .container {
+          padding: 0 30px;
+     }
+
+     .header {
+          height: auto;
+     }
+
+     .banner {
+          width: 90%;
+     }
+
+     .desktop-view {
+          display: none;
+     }
+
+     .mobile-view {
+          text-align: center;
+          text-align: left;
+     }
+
+     .world-cup-info h1 {
+          font-size: 2rem;
+          line-height: normal;
+     }
+
+     .articleWrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+     }
+
+     .importanat-links {
+          width: 100%;
+     }
+
+     .importanat-links-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          background: transparent;
+     }
+
+     .importanat-links-wrapper > div a {
+          width: 185px;
+          border: 1px solid #ddd;
+     }
+
+     .importanat-links-wrapper > div a.active {
+          border: none;
+     }
+
+     .blog-wrapper {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+     }
+
+     /* footer css responsive */
+
+     .footer-navigation ul {
+          flex-wrap: wrap;
+          line-height: 50px;
+     }
+}
+
+@media only screen and (max-width: 481px) {
+     .banner {
+          border-radius: 10px;
+          flex-direction: column;
+          padding: 10px;
+          margin-top: 40px;
+     }
+
+     .world-cup-info {
+          width: 100%;
+     }
+
+     .player-image {
+          width: 100%;
+     }
+     .player-image img {
+          margin-top: 20px;
+     }
+
+     .world-cup-info h1 {
+          text-align: center;
+          font-size: 2rem;
+          line-height: normal;
+     }
+
+     .desktop-view {
+          display: none;
+     }
+
+     .mobile-view {
+          text-align: center;
+          text-align: center;
+     }
+
+     .watch-live-btn-wrapper {
+          width: 100%;
+          display: grid;
+          text-align: center;
+          place-items: center;
+     }
+
+     .importanat-links-wrapper > div a {
+          margin: 0;
+     }
+
+     .blog-wrapper {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+     }
+
+     .importanat-links-wrapper {
+          align-items: center;
+          flex-direction: column;
+     }
+
+     /* footer css responsive */
+
+     .footer-navigation ul {
+          flex-wrap: wrap;
+          align-items: center;
+          flex-direction: column;
+          line-height: 50px;
+     }
+
+     /* view all button */
+
+     .view-all-button {
+          display: none;
+     }
+}
+
+@media only screen and (min-width: 991px) {
+     .mobile-view {
+          display: none;
+     }
+
+     /* view all button */
+
+     .view-all-button {
+          display: none;
+     }
+}
+
+/* Responsive css end here */
